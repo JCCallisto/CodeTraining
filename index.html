@@ -13,20 +13,26 @@
             <p>Generate beautiful color combinations</p>
         </header>
         
-        <div class="controls">
-            <button id="generateBtn">Generate Palette</button>
-            <button id="saveBtn">Save Palette</button>
-            <input type="color" id="baseColor" value="#3498db">
-            <label for="baseColor">Base Color</label>
-        </div>
-        
-        <div class="palette-container" id="paletteContainer">
-        </div>
-        
-        <div class="saved-palettes">
-            <h3>Saved Palettes</h3>
-            <div id="savedContainer"></div>
-        </div>
+        <main>
+            <section class="controls" aria-label="Palette Controls">
+                <button id="generateBtn" aria-label="Generate new color palette">Generate Palette</button>
+                <button id="saveBtn" aria-label="Save current palette">Save Palette</button>
+                <input type="color" id="baseColor" value="#3498db" aria-label="Select base color">
+                <label for="baseColor">Base Color</label>
+            </section>
+            
+            <section class="palette-container" id="paletteContainer" aria-label="Generated Palette">
+            </section>
+            
+            <section class="saved-palettes" aria-label="Saved Palettes">
+                <h3>Saved Palettes</h3>
+                <div id="savedContainer"></div>
+            </section>
+            
+            <div id="loadingState" role="status" aria-live="polite" style="display:none;">
+                Loading...
+            </div>
+        </main>
     </div>
     
     <script src="backfunc.js"></script>
