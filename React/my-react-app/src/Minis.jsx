@@ -46,10 +46,10 @@ export default Minis
 //In this Minis component, we define an array of miniatures, each represented as an object with id, name, and amount properties.
 //We then use the map function to iterate over the minis array and create a list item (li) for each miniature.
 //Each list item displays the name and amount of the miniature, with the amount wrapped in bold tags (b) for emphasis.
-//The key prop is set to the id of each miniature to help React identify which items have changed, are added, or are removed.
-//Finally, we return an ordered list (ol) containing all the list items generated from the minis array.
-//You can uncomment different sorting or filtering lines to see how they affect the displayed list of miniatures.
+//The key attribute is set to the unique id of each miniature to help React identify which items have changed, are added, or are removed.
+//Finally, we return an ordered list (ol) containing all the list items.
+//You can customize the sorting and filtering of the minis array by uncommenting the relevant lines of code.
 //Remember to import and use the Minis component in your main application file (e.g., App.jsx) to see it rendered in the UI.
-//You can further enhance the Minis component by adding styles, additional properties, or functionality as needed for your application.
-//Feel free to experiment with different JavaScript array methods and JSX syntax to create more dynamic and interactive components.
+//This example serves as a basic introduction to creating functional components in React and using JSX syntax.
+//Feel free to experiment with different data types, expressions, and HTML elements to create more complex components.
 //Happy coding!

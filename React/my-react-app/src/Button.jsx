@@ -19,18 +19,15 @@ function Button() {
 
 export default Button;
 
-//React hooks are special functions that let you "hook into" React features. For example, useState is a Hook that lets you add React state to function components.
-// UseState is a Hook that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value.
-// In this example, we use the useState hook to create a count state variable and a setCount function to update it. The handleClick2 function increments the count each time the button is clicked, up to a maximum of 5 clicks, and logs messages to the console accordingly.
-// The onClick event listener is added to the button element, which triggers the handleClick2 function when the button is clicked.
-// This demonstrates how to use state and event handling in a React functional component.
-// You can add more complex logic and state management as needed for your application.
-// Note: The button text does not change in this example, but you can modify the button text or other UI elements based on the state if desired.
-// You can also use other hooks like useEffect, useContext, etc., depending on your requirements.
-// Remember to import and use the Button component in your main application file (e.g., App.jsx) to see it in action.
-// This example serves as a basic introduction to using the useState hook and event handling in React functional components.
-// For more advanced state management scenarios, consider using libraries like Redux or Context API for larger applications.
-// Keep your components modular and reusable for better maintainability.
-// You can further enhance the Button component by adding more features, such as disabling the button after a certain number of clicks or changing its appearance based on the state.
-// Feel free to experiment with different event types and handlers to create a more dynamic user experience.
+// In this Button component, we use the useState hook to manage a count state variable that tracks the number of times the button has been clicked.
+// The handleClick2 function increments the count each time the button is clicked, up to a maximum of 5 clicks. If the button is clicked more than 5 times, it logs a message asking the user to stop clicking.
+// The button element has an onClick event listener that triggers the handleClick2 function when clicked.
+// This demonstrates how to use state and event handling in React components to create interactive UI elements.
+// The useState hook is imported from React and is used to declare state variables in functional components.
+// The setCount function is used to update the count state variable, which causes the component to re-render with the new value.
+// You can customize the button text and styling as needed for your application.
+// Remember to import and use the Button component in your main application file (e.g., App.jsx) to see it rendered in the UI.
+// You can further enhance the Button component by adding more features, such as disabling the button after a certain number of clicks or changing its appearance based on the count value.
+// Feel free to experiment with different state management techniques and event handling logic to create more complex and interactive components.
+// This example serves as a basic introduction to using state and event handling in React functional components.
 // Happy coding!
